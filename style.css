@@ -794,7 +794,7 @@ button {
   }
 
   .catalog {
-    max-width: 650px;
+    max-width: 460px;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -819,11 +819,15 @@ button {
     padding: 28px 0px 0px 0px;
   }
   .navFooterMobile {
+    position: fixed;
+    bottom: 0;
+    gap: 27px;
     display: flex;
     justify-content: space-between;
     padding-left: 0px;
     align-items: flex-end;
-    /* text-align: center; */
+    text-align: center;
+    background: var(--text-and-background);
   }
   .navFooterMobile a {
     margin-top: 10px;
@@ -843,11 +847,12 @@ button {
   }
   .wrapperFooter {
     background: none;
+    padding-bottom: 65px;
   }
   .CubeCatalogGrey {
     width: 70px;
     height: 70px;
-    background: url("./public/images/catalog3.svg") center center/cover
+    background: url("./public/images/catalogactive.svg") center center/cover
       no-repeat;
   }
   .heartCatalogGrey {
@@ -901,9 +906,5 @@ button {
     height: 70px;
     background: url("./public/images/client2-1.svg") center center/cover
       no-repeat;
-  }
-  .myImage {
-    width: 70px;
-    height: 70px;
   }
 }
