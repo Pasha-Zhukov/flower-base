@@ -311,8 +311,8 @@ button {
 .decorative,
 .blooming {
   display: block;
-  width: 398px;
-  height: 212px;
+  width: 455px;
+  height: 230px;
   border-radius: 20px;
   padding-left: 18px;
   padding-top: 10px;
@@ -847,7 +847,7 @@ button {
   .CubeCatalogGrey {
     width: 70px;
     height: 70px;
-    background: url("./public/images/catalog3-1.svg") center center/cover
+    background: url("./public/images/catalog3.svg") center center/cover
       no-repeat;
   }
   .heartCatalogGrey {
@@ -901,5 +901,9 @@ button {
     height: 70px;
     background: url("./public/images/client2-1.svg") center center/cover
       no-repeat;
+  }
+  .myImage {
+    width: 70px;
+    height: 70px;
   }
 }
