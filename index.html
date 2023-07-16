@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Каталог ПК</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navMenu">
+          <li class="city">
+            <a class="locationImg" href="#">
+              <img src="./public/images/location.svg" alt="location" /> Нижний
+              Новгород</a
+            >
+          </li>
+          <li class="cityMobile">
+            <a class="locationImg" href="#">
+              <img src="./public/images/locationMobile.svg" alt="location" /> Нижний
+              Новгород</a
+            >
+          </li>
+          <li class="mobileNone"><a href="#">Доставка</a></li>
+          <li class="mobileNone"><a href="#">Оплата</a></li>
+          <li class="mobileNone"><a href="#">Магазины</a></li>
+          <li class="mobileNone"><a class="navContacts" href="#">Контакты</a></li>
+          <li class="phone">
+            <a class="locationPhone" href="tel:8(831)214-00-43"
+              ><img
+                src="./public/images/phone.svg"
+                alt="phone"
+              />8(831) 214-00-43</a
+            >
+          </li>
+          <li class="phoneMobile">
+            <a class="locationPhone" href="tel:8(831)214-00-43"
+              ><img
+                src="./public/images/phoneMobile.svg"
+                alt="phone"
+              />8(831) 214-00-43</a
+            >
+          </li>
+          <li class="mobileNone">
+            <a class="locationStatus" href="#"
+              ><img src="./public/images/status.svg" alt="status" />Статус
+              заказа</a
+            >
+          </li>
+          <li class="mobileNone">
+            <a class="locationVector" href="#"
+              >Еще <img src="./public/images/vector.svg" alt="vector"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="headerBottom">
+        <div class="logo"></div>
+        <div class="logoMini"></div>
+        <button class="button buttonHeaderBottom">
+          <img src="./public/images/cube.svg" alt="cube" />Каталог
+        </button>
+        <div class="search">
+          <img src="./public/images/search.svg" alt="search" />
+          <input class="searchInput" type="text" id="input" placeholder="Хочу найти..." />
+        </div>
+        <div class="delivery-time">
+          <img src="./public/images/timeimg.svg" alt="timeimg" /><img
+            class="delivery-timeVector"
+            src="./public/images/vector-2.svg"
+            alt="vector"
+          />Время доставки 29.05 18:00-20:00
+        </div>
+        <div class="icon-basket">
+          <img src="./public/images/basket.svg" alt="basket" />
+        </div>
+        <div class="icon-heart">
+          <img src="./public/images/heart.svg" alt="heart" />
+        </div>
+        <div class="icon-user">
+          <img src="./public/images/user.svg" alt="user" />
+        </div>
+        <img class="menuHamburger" src="./public/images/меню гамбургер.svg" alt="menuHamburger" />
+      </div>
+    </header>
+<div class="wrapperContent">
+  <div class="crumbs">
+    <p>Главная</p>
+    <img class="crumbsImg" src="./public/images/ellipse-87.svg" alt="ellipse" />
+    <p>Каталог</p>
+  </div>
+  <div class="headerCatalog">Каталог товаров</div>
+  <div class="menuCatalog"> 
+    <div class="d-flex align-items-start">
+      <div  class="nav flex-row nav-pills me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link buttonLeftMenu  allCatalog" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Весь каталог</button>
+        <button  class="nav-link buttonLeftMenu active " id="v-pills-flowers-tab" data-bs-toggle="pill" data-bs-target="#v-pills-flowers" type="button" role="tab" aria-controls="v-pills-flowers" aria-selected="false"><div class="buttonLeftMenuImg"></div>Цветы</button>
+        <button class="nav-link buttonLeftMenu" id="v-pills-bouquets-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bouquets" type="button" role="tab" aria-controls="v-pills-bouquets" aria-selected="false"><div class="buttonLeftMenuImg"></div>Букеты</button>
+        <button class="nav-link buttonLeftMenu" id="v-pills-roses-tab" data-bs-toggle="pill" data-bs-target="#v-pills-roses" type="button" role="tab" aria-controls="v-pills-roses" aria-selected="false"><div class="buttonLeftMenuImg"></div>Розы</button>
+        <button class="nav-link buttonLeftMenu" id="v-pills-stock-tab" data-bs-toggle="pill" data-bs-target="#v-pills-stock" type="button" role="tab" aria-controls="v-pills-stock" aria-selected="false"><div class="buttonLeftMenuImg"></div>Акции</button>
+        <button class="nav-link buttonLeftMenu" id="v-pills-occasion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-occasion" type="button" role="tab" aria-controls="v-pills-occasion" aria-selected="false"><div class="buttonLeftMenuImg"></div>Повод</button>
+        <button class="nav-link buttonLeftMenu" id="v-pills-potted-tab" data-bs-toggle="pill" data-bs-target="#v-pills-potted" type="button" role="tab" aria-controls="v-pills-potted" aria-selected="false"><div class="buttonLeftMenuImg"></div>Горшечные</button>
+        <button class="nav-link buttonLeftMenu" id="v-pills-present-tab" data-bs-toggle="pill" data-bs-target="#v-pills-present" type="button" role="tab" aria-controls="v-pills-present" aria-selected="false"><div class="buttonLeftMenuImg"></div>Падарки</button>
+      </div>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+          <ul class="catalog">
+            <li>
+              <a class="roses" href="#"
+                >Розы <img src="./public/images/roses.png" alt="roses"
+              /></a>
+            </li>
+            <li>
+              <a class="tulips" href="#"
+                >Тюльпаны<img src="./public/images/tulips.png" alt="tulips"
+              /></a>
+            </li>
+            <li>
+              <a class="lilies" href="#"
+                >Лилии<img src="./public/images/lilies.png" alt="lilies"
+              /></a>
+            </li>
+            <li>
+              <a class="peonies" href="#"
+                >Пионы<img src="./public/images/peonies.png" alt="peonies"
+              /></a>
+            </li>
+            <li>
+              <a class="irises" href="#"
+                >Ирисы<img src="./public/images/irises.png" alt="irises"
+              /></a>
+            </li>
+            <li>
+              <a class="hydrangea" href="#"
+                >Гортензия<img
+                  src="./public/images/Hydrangea.png"
+                  alt="Hydrangea"
+              /></a>
+            </li>
+            <li>
+              <a class="alstroemeria" href="#"
+                >Альстромерия<img
+                  src="./public/images/alstroemeria.png"
+                  alt="Alstroemeria"
+              /></a>
+            </li>
+            <li>
+              <a class="lisianthus" href="#"
+                >Лизиантус<img
+                  src="./public/images/lisianthus.png"
+                  alt="Lisianthus"
+              /></a>
+            </li>
+            <li>
+              <a class="gerberas" href="#"
+                >Герберы<img src="./public/images/gerberas.png" alt="gerberas"
+              /></a>
+            </li>
+            <li>
+              <a class="chrysanthemum" href="#"
+                >Хризантема<img
+                  src="./public/images/chrysanthemum.png"
+                  alt="Chrysanthemum"
+              /></a>
+            </li>
+            <li>
+              <a class="carnation" href="#"
+                >Гвоздика<img src="./public/images/carnation.png" alt="Carnation"
+              /></a>
+            </li>
+            <li>
+              <a class="orchids" href="#"
+                >Орхидеи<img src="./public/images/orchids.png" alt="orchids"
+              /></a>
+            </li>
+            <li>
+              <a class="gypsophila" href="#"
+                >Гипсофила<img
+                  src="./public/images/gypsophila.png"
+                  alt="gypsophila"
+              /></a>
+            </li>
+            <li>
+              <a class="potted" href="#"
+                >Горшечные<img src="./public/images/potted.png" alt="potted"
+              /></a>
+            </li>
+          </ul> 
+        </div>
+        <div class="tab-pane fade show active" id="v-pills-flowers" role="tabpanel" aria-labelledby="v-pills-flowers-tab" tabindex="0">
+          <ul class="catalog">
+            <li>
+              <a class="roses" href="#"
+                >Розы <img src="./public/images/roses.png" alt="roses"
+              /></a>
+            </li>
+            <li>
+              <a class="tulips" href="#"
+                >Тюльпаны<img src="./public/images/tulips.png" alt="tulips"
+              /></a>
+            </li>
+            <li>
+              <a class="lilies" href="#"
+                >Лилии<img src="./public/images/lilies.png" alt="lilies"
+              /></a>
+            </li>
+            <li>
+              <a class="peonies" href="#"
+                >Пионы<img src="./public/images/peonies.png" alt="peonies"
+              /></a>
+            </li>
+            <li>
+              <a class="irises" href="#"
+                >Ирисы<img src="./public/images/irises.png" alt="irises"
+              /></a>
+            </li>
+            <li>
+              <a class="hydrangea" href="#"
+                >Гортензия<img
+                  src="./public/images/Hydrangea.png"
+                  alt="Hydrangea"
+              /></a>
+            </li>
+            <li>
+              <a class="alstroemeria" href="#"
+                >Альстромерия<img
+                  src="./public/images/alstroemeria.png"
+                  alt="Alstroemeria"
+              /></a>
+            </li>
+            <li>
+              <a class="lisianthus" href="#"
+                >Лизиантус<img
+                  src="./public/images/lisianthus.png"
+                  alt="Lisianthus"
+              /></a>
+            </li>
+            <li>
+              <a class="gerberas" href="#"
+                >Герберы<img src="./public/images/gerberas.png" alt="gerberas"
+              /></a>
+            </li>
+            <li>
+              <a class="chrysanthemum" href="#"
+                >Хризантема<img
+                  src="./public/images/chrysanthemum.png"
+                  alt="Chrysanthemum"
+              /></a>
+            </li>
+            <li>
+              <a class="carnation" href="#"
+                >Гвоздика<img src="./public/images/carnation.png" alt="Carnation"
+              /></a>
+            </li>
+            <li>
+              <a class="orchids" href="#"
+                >Орхидеи<img src="./public/images/orchids.png" alt="orchids"
+              /></a>
+            </li>
+            <li>
+              <a class="gypsophila" href="#"
+                >Гипсофила<img
+                  src="./public/images/gypsophila.png"
+                  alt="gypsophila"
+              /></a>
+            </li>
+            <li>
+              <a class="potted" href="#"
+                >Горшечные<img src="./public/images/potted.png" alt="potted"
+              /></a>
+            </li>
+          </ul> 
+        </div>
+        <div class="tab-pane fade" id="v-pills-bouquets" role="tabpanel" aria-labelledby="v-pills-bouquets-tab" tabindex="0">
+          <ul class="catalog">
+            <li>
+              <a class="roses" href="#"
+                >Монобукеты <img src="./public/images/roses.png" alt="roses"
+              /></a>
+            </li>
+            <li>
+              <a class="tulips" href="#"
+                >Авторские букеты<img src="./public/images/tulips.png" alt="tulips"
+              /></a>
+            </li>
+            <li>
+              <a class="lilies" href="#"
+                >Букеты в коробках<img src="./public/images/lilies.png" alt="lilies"
+              /></a>
+            </li>
+            <li>
+              <a class="peonies" href="#"
+                >Букеты в корзинах<img src="./public/images/peonies.png" alt="peonies"
+              /></a>
+            </li>
+            <li>
+              <a class="irises" href="#"
+                >Букеты гиганты<img src="./public/images/irises.png" alt="irises"
+              /></a>
+            </li>
+            <li>
+              <a class="hydrangea" href="#"
+                >Свадебные букеты<img
+                  src="./public/images/Hydrangea.png"
+                  alt="Hydrangea"
+              /></a>
+            </li>
+              <a class="potted" href="#"
+                >Горшечные<img src="./public/images/potted.png" alt="potted"
+              /></a>
+            </li>
+          </ul> 
+        </div>
+        <div class="tab-pane fade" id="v-pills-roses" role="tabpanel" aria-labelledby="v-pills-roses-tab" tabindex="0">
+          <ul class="catalog">
+            <li>
+              <a class="roses" href="#">Красные розы<img src="./public/images/roses.png" alt="roses"
+              /></a>
+            </li>
+            <li>
+              <a class="tulips" href="#">Кустовые розы<img src="./public/images/tulips.png" alt="tulips"
+              /></a>
+            </li>
+            <li>
+              <a class="lilies" href="#">Розы в коробках<img src="./public/images/lilies.png" alt="lilies"
+              /></a>
+            </li>
+          </ul> 
+        </div>
+        <div class="tab-pane fade" id="v-pills-stock" role="tabpanel" aria-labelledby="v-pills-stock-tab" tabindex="0">          
+            <ul class="catalog">
+            <li>
+              <a class="roses" href="#">Акции<img src="./public/images/roses.png" alt="roses"
+              /></a>
+            </li>
+            <li>
+              <a class="tulips" href="#">Акции<img src="./public/images/tulips.png" alt="tulips"
+              /></a>
+            </li>
+            <li>
+              <a class="lilies" href="#">Акции<img src="./public/images/lilies.png" alt="lilies"
+              /></a>
+            </li>
+           </ul> 
+        </div>
+        <div class="tab-pane fade" id="v-pills-occasion" role="tabpanel" aria-labelledby="v-pills-occasion-tab" tabindex="0">
+          <ul class="catalog">
+            <li>
+              <a class="roses" href="#"
+                >Юбилеи <img src="./public/images/roses.png" alt="roses"
+              /></a>
+            </li>
+
+            <li>
+              <a class="hydrangea" href="#"
+                >Свадебные букеты<img
+                  src="./public/images/Hydrangea.png"
+                  alt="Hydrangea"
+              /></a>
+          </ul> 
+        </div>
+        <div class="tab-pane fade" id="v-pills-potted" role="tabpanel" aria-labelledby="v-pills-potted-tab" tabindex="0">
+          <ul class="catalog">
+            <li>
+              <a class="decorative" href="#"><span>Декоративно-лиственные</span><img src="./public/images/decorative leafy.png" alt="roses"
+              /></a>
+            </li>
+            <li>
+              <a class="blooming" href="#"><span>Цветущие</span><img src="./public/images/blooming.png" alt="tulips"
+              /></a>
+            </li>
+          </ul> 
+        </div>
+        <div class="tab-pane fade" id="v-pills-present" role="tabpanel" aria-labelledby="v-pills-present-tab" tabindex="0">          
+          <ul class="catalog">
+          <li>
+            <a class="roses" href="#">Падарки<img src="./public/images/roses.png" alt="roses"
+            /></a>
+          </li>
+          <li>
+            <a class="tulips" href="#">Падарки<img src="./public/images/tulips.png" alt="tulips"
+            /></a>
+          </li>
+          <li>
+            <a class="lilies" href="#">Падарки<img src="./public/images/lilies.png" alt="lilies"
+            /></a>
+          </li>
+         </ul> 
+      </div>
+    
+      </div>
+    </div>
+  
+  </div>
+ 
+  <div class="stockHeader">Акции</div>
+  <div class="stock">
+    <div class="CardProduct">
+      <div class="hitMarker">Хит</div>
+      <img
+        class="heartMarker"
+        src="/public/images//heartMarker.svg"
+        alt="heartMarker"
+      />
+      <img src="/public/images/test-img.png" alt="test" />
+      <div class="ratingSize">
+        <div class="rating">
+          <img src="/public/images/star.svg" alt="test" />4.8
+        </div>
+        <div class="size">85 x 90 см</div>
+      </div>
+
+      <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+      <div class="price">10 000₽</div>
+      <button class="button buttonCard">Заказать</button>
+    </div>
+    <div class="CardProduct">
+      <div class="hitMarker">Хит</div>
+      <img
+        class="heartMarker"
+        src="/public/images//heartMarker.svg"
+        alt="heartMarker"
+      />
+      <img src="/public/images/test-img.png" alt="test" />
+      <div class="ratingSize">
+        <div class="rating">
+          <img src="/public/images/star.svg" alt="test" />4.8
+        </div>
+        <div class="size">85 x 90 см</div>
+      </div>
+
+      <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+      <div class="price">10 000₽</div>
+      <button class="button buttonCard">Заказать</button>
+    </div>
+    <div class="CardProduct">
+      <div class="hitMarker">Хит</div>
+      <img
+        class="heartMarker"
+        src="/public/images//heartMarker.svg"
+        alt="heartMarker"
+      />
+      <img src="/public/images/test-img.png" alt="test" />
+      <div class="ratingSize">
+        <div class="rating">
+          <img src="/public/images/star.svg" alt="test" />4.8
+        </div>
+        <div class="size">85 x 90 см</div>
+      </div>
+
+      <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+      <div class="price">10 000₽</div>
+      <button class="button buttonCard">Заказать</button>
+    </div>
+    <div class="CardProduct">
+      <div class="hitMarker">Хит</div>
+      <img
+        class="heartMarker"
+        src="/public/images//heartMarker.svg"
+        alt="heartMarker"
+      />
+      <img src="/public/images/test-img.png" alt="test" />
+      <div class="ratingSize">
+        <div class="rating">
+          <img src="/public/images/star.svg" alt="test" />4.8
+        </div>
+        <div class="size">85 x 90 см</div>
+      </div>
+
+      <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+      <div class="price">10 000₽</div>
+      <button class="button buttonCard">Заказать</button>
+    </div>
+  </div>
+  <div class="historyHeader">Ранее просматривали</div>
+  <div class="history">
+    <div class="CardProduct">
+      <div class="hitMarker">Хит</div>
+      <img
+        class="heartMarker"
+        src="/public/images//heartMarker.svg"
+        alt="heartMarker"
+      />
+      <img src="/public/images/test-img.png" alt="test" />
+      <div class="ratingSize">
+        <div class="rating">
+          <img src="/public/images/star.svg" alt="test" />4.8
+        </div>
+        <div class="size">85 x 90 см</div>
+      </div>
+
+      <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+      <div class="price">10 000₽</div>
+      <button class="button buttonCard">Заказать</button>
+    </div>
+    <div class="CardProduct">
+      <div class="hitMarker">Хит</div>
+      <img
+        class="heartMarker"
+        src="/public/images//heartMarker.svg"
+        alt="heartMarker"
+      />
+      <img src="/public/images/test-img.png" alt="test" />
+      <div class="ratingSize">
+        <div class="rating">
+          <img src="/public/images/star.svg" alt="test" />4.8
+        </div>
+        <div class="size">85 x 90 см</div>
+      </div>
+
+      <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+      <div class="price">10 000₽</div>
+      <button class="button buttonCard">Заказать</button>
+    </div>
+    <div class="CardProduct">
+      <div class="hitMarker">Хит</div>
+      <img
+        class="heartMarker"
+        src="/public/images//heartMarker.svg"
+        alt="heartMarker"
+      />
+      <img src="/public/images/test-img.png" alt="test" />
+      <div class="ratingSize">
+        <div class="rating">
+          <img src="/public/images/star.svg" alt="test" />4.8
+        </div>
+        <div class="size">85 x 90 см</div>
+      </div>
+
+      <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+      <div class="price">10 000₽</div>
+      <button class="button buttonCard">Заказать</button>
+    </div>
+    <div class="CardProduct">
+      <div class="hitMarker">Хит</div>
+      <img
+        class="heartMarker"
+        src="/public/images//heartMarker.svg"
+        alt="heartMarker"
+      />
+      <img src="/public/images/test-img.png" alt="test" />
+      <div class="ratingSize">
+        <div class="rating">
+          <img src="/public/images/star.svg" alt="test" />4.8
+        </div>
+        <div class="size">85 x 90 см</div>
+      </div>
+
+      <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+      <div class="price">10 000₽</div>
+      <button class="button buttonCard">Заказать</button>
+    </div>
+  </div>
+</div>
+   
+<div class="wrapperFooter">
+  <footer class="footer">
+    <div class="footer2">      <div class="HeaderFooter">
+      <h4 class="headerDelivery">Доставка цветов в Нижнем Новгороде</h4>
+      <p>Проспект Ленина 62а</p>
+      <p>ул. Касьянова, д. 2б</p>
+      <p>Проспект Гагарина, д. 182</p>
+      <p>Проспект Гагарина, д. 19</p>
+      <p>ул. Белинского, д. 71/1</p>
+      <p>ул. Аэродромная, д. 28</p>
+      <p>ул. Коминтерна, д. 168</p>
+      <p>Проспект Гагарина, д. 60/1</p>
+    </div>
+    <button class="button buttonShowAll">Показать все</button>
+
+    <div class="HeaderFooter">
+      <ul class="HeaderFooter">
+        <h4 class="headerDelivery">Каталог товаров</h4>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">Розы</a></li>
+        <li><a href="#">Букеты</a></li>
+        <li><a href="#">Цветы</a></li>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">В коробках</a></li>
+        <li><a href="#">Корзины</a></li>
+        <li><a href="#">Повод</a></li>
+        <li><a href="#">Горшечые</a></li>
+      </ul>
+    </div>
+    <div class="HeaderFooter">
+      <ul class="HeaderFooter">
+        <h4 class="headerDelivery">Информация покупателю</h4>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Оплата</a></li>
+        <li><a href="#">Корпоративным клиентам</a></li>
+        <li><a href="#">Франшиза</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Гарантия свежести</a></li>
+        <li><a href="#">Бонусная программа</a></li>
+        <li><a href="#">Вакансии</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+      </ul>
+    </div>
+    <div class="HeaderFooter HeaderFooterСontacts">
+      <h4 class="headerDelivery">Контакты</h4>
+      <div class="wrapperPhoneOfice">        
+        <p>8 (831) 214-00-43 <div class="aroundClockOffice">Круглосуточно</div></p>
+        <p>8 (960) 168-53-53<div class="aroundClockOffice">Офис доставки</div></p></div>
+      <div class="addressRequisites">
+        Реквизиты онлайн-продавца: ИП Мочалина Гульфруc Мутыгуловна ИНН:
+        891103803770 ОГРИП: 318723200071651
+      </div>
+      <div class="addressRequisites">
+        Центральный офис доставки: г. Нижний Новгород, ул. Аэродромная, 28
+      </div>
+      <div class="ratingYandex">
+        <img  src="/public/images/imgYandex.svg" alt="test" /><div class="ratingYandexNumber">4.7</div><img
+          src="/public/images/starFull.svg"
+          alt="imgYandex"
+        />
+        <img src="/public/images/starFull.svg" alt="starFull" />
+        <img src="/public/images/starFull.svg" alt="starFull" />
+        <img src="/public/images/starFull.svg" alt="starFull" />
+        <img src="/public/images/emptyHalf.png" alt="starFull" />
+        Рейтинг организации в яндексе
+      </div>
+    </div>
+    <div class="hr"></div></div>
+    <div class="rightsReserved">
+      <div class="footerIconsBanks">
+        <div><img src="/public/images/master-card-logo.svg" alt="master-card-logo" /></div>
+        <div> <img src="/public/images/visa-logo.svg" alt="visa-logo" /></div>
+        <div><img src="/public/images/yandexPay.svg" alt="yandexPay" /></div>
+        <div><img src="/public/images/sbp-1.svg" alt="sbp" /></div>
+        <div><img src="/public/images/sberPay.svg" alt="sberPay" /></div>
+        <div><img src="/public/images/mir.svg" alt="mir" /></div>
+      </div>
+      <div class="footerIconsSocialMedia">
+        <a href="https://web.whatsapp.com/"><div class="wrapperIconMedia"><img src="/public/images/whatsapp.svg" alt="whatsapp" /></div></a>
+        <a href="https://web.telegram.org"><div class="wrapperIconMedia"><img src="/public/images/telegramm.svg" alt="telegramm" /></div></a>
+        <a href="https://ru-ru.facebook.com/"><div class="wrapperIconMedia"><img src="/public/images/facebook.svg" alt="facebook" /></div></a>
+        <a href="https://m.dzen.ru/"><div class="wrapperIconMedia"><img src="/public/images/dzen.svg" alt="dzen" /></div></a>
+        <a href="https://www.youtube.com/"><div class="wrapperIconMedia"><img src="/public/images/youtube.svg" alt="youtube" /></div></a>
+      </div>
+    </div>
+    <div class="info">
+      <div>База Цветов 24.ру  все права защищены 2023г.</div>
+      <div>Информация на сайте представлена для ознакомления - не оферта.</div>
+    </div>
+  </footer>
+  <footer class="footerMobile">
+    <div class="navFooterMobile">
+      <div><a href="#"><div class="CubeCatalogGrey"></div></a></div>
+      <div><a href="#"><div class="heartCatalogGrey"></div></a></div>
+      <div><a href="#"><div class="basketCatalogGrey"></div></a></div>
+      <div onclick="focusInput()"><a href="#"><div class="searchCatalogGrey"></div></a></div>
+      <div><a href="#"><div class="userCatalogGrey"></div></a></div>
+    </div>
+  </footer>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
