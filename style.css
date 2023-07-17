@@ -711,10 +711,10 @@ button {
   .icon-heart,
   .icon-user,
   .footer,
-  .stockHeader,
+  /* .stockHeader,
   .stock,
   .historyHeader,
-  .history,
+  .history, */
   .city,
   .phone,
   .buttonLeftMenuImg {
@@ -818,6 +818,11 @@ button {
     margin-top: 0;
     padding: 28px 0px 0px 0px;
   }
+  .stockHeader,
+  .historyHeader {
+    text-align: center;
+  }
+
   .navFooterMobile {
     position: fixed;
     bottom: 0;
