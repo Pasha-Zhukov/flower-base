@@ -823,6 +823,21 @@ button {
     text-align: center;
   }
 
+  .CardProduct {
+    width: 210px;
+  }
+  .ratingSize {
+    gap: 35px;
+  }
+  .price {
+    margin: 15px 0 0 15px;
+    font-size: 19px;
+  }
+  .buttonCard {
+    width: 100px;
+    height: 30px;
+  }
+
   .navFooterMobile {
     position: fixed;
     bottom: 0;
