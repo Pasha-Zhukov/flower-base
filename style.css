@@ -55,6 +55,9 @@ div::-webkit-scrollbar {
     url("./fonts/SF-Pro-Display-Regular.otf") format("otf"),
     url("./fonts/SF-Pro-Display-Regular.eot") format("eot");
 }
+.container {
+  max-width: 1200px;
+}
 .wrapperContent {
   margin: 0 auto;
   padding-bottom: 15px;
@@ -214,31 +217,25 @@ button {
 }
 
 .crumbs {
-  margin: 0 auto;
-  max-width: 1200px;
-  display: flex;
   color: var(--unnamed, #9b9b9b);
   font-family: SF Pro Display;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-top: 20px;
 }
 .crumbs img {
   margin: 0 12px;
 }
 
 .headerCatalog {
-  margin: 0 auto;
-  max-width: 1200px;
   color: var(--unnamed, var(--text-and-border));
   font-family: SF Pro Display;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .menuCatalog {
@@ -423,28 +420,15 @@ button {
 .blooming {
   background: #dcf8ec;
 }
-.stock,
-.history {
-  margin: 0 auto;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
 
 .stockHeader,
 .historyHeader {
-  margin: 0 auto;
-  max-width: 1200px;
-  margin-top: 40px;
   color: var(--unnamed, var(--text-and-border));
   font-family: SF Pro Display;
   font-size: 35px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  text-align: left;
 }
 .CardProduct {
   position: relative;
@@ -711,10 +695,6 @@ button {
   .icon-heart,
   .icon-user,
   .footer,
-  /* .stockHeader,
-  .stock,
-  .historyHeader,
-  .history, */
   .city,
   .phone,
   .buttonLeftMenuImg {
@@ -752,7 +732,7 @@ button {
     color: var(--text-and-border);
   }
 
-  .d-flex {
+  .listMenuCatalog {
     display: inline !important;
     overflow-y: auto !important;
   }
@@ -837,16 +817,13 @@ button {
     width: 100px;
     height: 30px;
   }
+  .footerMobile {
+    padding-right: 10px;
+  }
 
   .navFooterMobile {
-    position: fixed;
     bottom: 0;
-    gap: 27px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0px;
     align-items: flex-end;
-    text-align: center;
     background: var(--text-and-background);
   }
   .navFooterMobile a {

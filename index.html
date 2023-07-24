@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=490", initial-scale=1.0, maximum-scale=1.0, user-scalable="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./public/images/favicon.ico" type="image/x-icon">
      <title>flower-base</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -86,15 +86,24 @@
         <img class="menuHamburger" src="./public/images/меню гамбургер.svg" alt="menuHamburger" />
       </div>
     </header>
+    
     <div class="wrapperContent">
-      <div class="crumbs">
-        <p>Главная</p>
-        <img class="crumbsImg" src="./public/images/ellipse-87.svg" alt="ellipse" />
-        <p>Каталог</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 text-start d-flex mt-4 crumbs " >
+            <p>Главная</p>
+            <img class="crumbsImg" src="./public/images/ellipse-87.svg" alt="ellipse" />
+            <p>Каталог</p>
+          </div>
+        </div>
       </div>
-      <div class="headerCatalog">Каталог товаров</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-start  headerCatalog mt-4  ">Каталог товаров</div>
+        </div>
+      </div>
       <div class="menuCatalog"> 
-        <div class="d-flex align-items-start">
+        <div class="d-flex align-items-start listMenuCatalog">
           <div  class="nav flex-row nav-pills me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <button class="nav-link buttonLeftMenu  allCatalog" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Весь каталог</button>
             <button class="nav-link buttonLeftMenu active " id="v-pills-flowers-tab" data-bs-toggle="pill" data-bs-target="#v-pills-flowers" type="button" role="tab" aria-controls="v-pills-flowers" aria-selected="false"><div class="buttonLeftMenuImg"></div>Цветы</button>
@@ -395,255 +404,308 @@
         </div>
       
       </div>
- 
-      <div class="stockHeader">Акции</div>
-      <div class="stock">
-        <div class="CardProduct">
-          <div class="hitMarker">Хит</div>
-          <img
-            class="heartMarker"
-            src="./public/images//heartMarker.svg"
-            alt="heartMarker"
-          />
-          <img src="./public/images/test-img.png" alt="test" />
-          <div class="ratingSize">
-            <div class="rating">
-              <img src="./public/images/star.svg" alt="test" />4.8
-            </div>
-            <div class="size">85 x 90 см</div>
-          </div>
-          <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
-          <div class="price">10 000₽</div>
-          <button class="button buttonCard">Заказать</button>
-        </div>
-        <div class="CardProduct">
-          <div class="hitMarker">Хит</div>
-          <img
-            class="heartMarker"
-            src="./public/images//heartMarker.svg"
-            alt="heartMarker"
-          />
-          <img src="./public/images/test-img.png" alt="test" />
-          <div class="ratingSize">
-            <div class="rating">
-              <img src="./public/images/star.svg" alt="test" />4.8
-            </div>
-            <div class="size">85 x 90 см</div>
-          </div>
-          <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
-          <div class="price">10 000₽</div>
-          <button class="button buttonCard">Заказать</button>
-        </div>
-        <div class="CardProduct">
-          <div class="hitMarker">Хит</div>
-          <img
-            class="heartMarker"
-            src="./public/images//heartMarker.svg"
-            alt="heartMarker"
-          />
-          <img src="./public/images/test-img.png" alt="test" />
-          <div class="ratingSize">
-            <div class="rating">
-              <img src="./public/images/star.svg" alt="test" />4.8
-            </div>
-            <div class="size">85 x 90 см</div>
-          </div>
-          <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
-          <div class="price">10 000₽</div>
-          <button class="button buttonCard">Заказать</button>
-        </div>
-        <div class="CardProduct">
-          <div class="hitMarker">Хит</div>
-          <img
-            class="heartMarker"
-            src="./public/images//heartMarker.svg"
-            alt="heartMarker"
-          />
-          <img src="./public/images/test-img.png" alt="test" />
-          <div class="ratingSize">
-            <div class="rating">
-              <img src="./public/images/star.svg" alt="test" />4.8
-            </div>
-            <div class="size">85 x 90 см</div>
-          </div>
-          <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
-          <div class="price">10 000₽</div>
-          <button class="button buttonCard">Заказать</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-6"></div>
         </div>
       </div>
-      <div class="historyHeader">Ранее просматривали</div>
-      <div class="history">
-        <div class="CardProduct">
-          <div class="hitMarker">Хит</div>
-          <img
-            class="heartMarker"
-            src="./public/images//heartMarker.svg"
-            alt="heartMarker"
-          />
-          <img src="./public/images/test-img.png" alt="test" />
-          <div class="ratingSize">
-            <div class="rating">
-              <img src="./public/images/star.svg" alt="test" />4.8
-            </div>
-            <div class="size">85 x 90 см</div>
-          </div>
-          <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
-          <div class="price">10 000₽</div>
-          <button class="button buttonCard">Заказать</button>
-        </div>
-        <div class="CardProduct">
-          <div class="hitMarker">Хит</div>
-          <img
-            class="heartMarker"
-            src="./public/images//heartMarker.svg"
-            alt="heartMarker"
-          />
-          <img src="./public/images/test-img.png" alt="test" />
-          <div class="ratingSize">
-            <div class="rating">
-              <img src="./public/images/star.svg" alt="test" />4.8
-            </div>
-            <div class="size">85 x 90 см</div>
-          </div>
-          <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
-          <div class="price">10 000₽</div>
-          <button class="button buttonCard">Заказать</button>
-        </div>
-        <div class="CardProduct">
-          <div class="hitMarker">Хит</div>
-          <img
-            class="heartMarker"
-            src="./public/images//heartMarker.svg"
-            alt="heartMarker"
-          />
-          <img src="./public/images/test-img.png" alt="test" />
-          <div class="ratingSize">
-            <div class="rating">
-              <img src="./public/images/star.svg" alt="test" />4.8
-            </div>
-            <div class="size">85 x 90 см</div>
-          </div>
-          <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
-          <div class="price">10 000₽</div>
-          <button class="button buttonCard">Заказать</button>
-        </div>
-        <div class="CardProduct">
-          <div class="hitMarker">Хит</div>
-          <img
-            class="heartMarker"
-            src="./public/images//heartMarker.svg"
-            alt="heartMarker"
-          />
-          <img src="./public/images/test-img.png" alt="test" />
-          <div class="ratingSize">
-            <div class="rating">
-              <img src="./public/images/star.svg" alt="test" />4.8
-            </div>
-            <div class="size">85 x 90 см</div>
-          </div>
-          <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
-          <div class="price">10 000₽</div>
-          <button class="button buttonCard">Заказать</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-start mt-4 stockHeader">Акции</div>
         </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-6 d-flex justify-content-center">
+            <div class="CardProduct">
+              <div class="hitMarker">Хит</div>
+              <img
+                class="heartMarker"
+                src="./public/images//heartMarker.svg"
+                alt="heartMarker"
+              />
+              <img src="./public/images/test-img.png" alt="test" />
+              <div class="ratingSize">
+                <div class="rating">
+                  <img src="./public/images/star.svg" alt="test" />4.8
+                </div>
+                <div class="size">85 x 90 см</div>
+              </div>
+              <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+              <div class="price">10 000₽</div>
+              <button class="button buttonCard">Заказать</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 d-flex justify-content-center">
+            <div class="CardProduct">
+              <div class="hitMarker">Хит</div>
+              <img
+                class="heartMarker"
+                src="./public/images//heartMarker.svg"
+                alt="heartMarker"
+              />
+              <img src="./public/images/test-img.png" alt="test" />
+              <div class="ratingSize">
+                <div class="rating">
+                  <img src="./public/images/star.svg" alt="test" />4.8
+                </div>
+                <div class="size">85 x 90 см</div>
+              </div>
+              <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+              <div class="price">10 000₽</div>
+              <button class="button buttonCard">Заказать</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 d-flex justify-content-center">
+            <div class="CardProduct">
+              <div class="hitMarker">Хит</div>
+              <img
+                class="heartMarker"
+                src="./public/images//heartMarker.svg"
+                alt="heartMarker"
+              />
+              <img src="./public/images/test-img.png" alt="test" />
+              <div class="ratingSize">
+                <div class="rating">
+                  <img src="./public/images/star.svg" alt="test" />4.8
+                </div>
+                <div class="size">85 x 90 см</div>
+              </div>
+              <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+              <div class="price">10 000₽</div>
+              <button class="button buttonCard">Заказать</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 d-flex justify-content-center">
+            <div class="CardProduct">
+              <div class="hitMarker">Хит</div>
+              <img
+                class="heartMarker"
+                src="./public/images//heartMarker.svg"
+                alt="heartMarker"
+              />
+              <img src="./public/images/test-img.png" alt="test" />
+              <div class="ratingSize">
+                <div class="rating">
+                  <img src="./public/images/star.svg" alt="test" />4.8
+                </div>
+                <div class="size">85 x 90 см</div>
+              </div>
+              <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+              <div class="price">10 000₽</div>
+              <button class="button buttonCard">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-start mt-4 historyHeader">Ранее просматривали</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-6 d-flex justify-content-center">
+            <div class="CardProduct">
+              <div class="hitMarker">Хит</div>
+              <img
+                class="heartMarker"
+                src="./public/images//heartMarker.svg"
+                alt="heartMarker"
+              />
+              <img src="./public/images/test-img.png" alt="test" />
+              <div class="ratingSize">
+                <div class="rating">
+                  <img src="./public/images/star.svg" alt="test" />4.8
+                </div>
+                <div class="size">85 x 90 см</div>
+              </div>
+              <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+              <div class="price">10 000₽</div>
+              <button class="button buttonCard">Заказать</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 d-flex justify-content-center">
+            <div class="CardProduct">
+              <div class="hitMarker">Хит</div>
+              <img
+                class="heartMarker"
+                src="./public/images//heartMarker.svg"
+                alt="heartMarker"
+              />
+              <img src="./public/images/test-img.png" alt="test" />
+              <div class="ratingSize">
+                <div class="rating">
+                  <img src="./public/images/star.svg" alt="test" />4.8
+                </div>
+                <div class="size">85 x 90 см</div>
+              </div>
+              <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+              <div class="price">10 000₽</div>
+              <button class="button buttonCard">Заказать</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 d-flex justify-content-center">
+            <div class="CardProduct">
+              <div class="hitMarker">Хит</div>
+              <img
+                class="heartMarker"
+                src="./public/images//heartMarker.svg"
+                alt="heartMarker"
+              />
+              <img src="./public/images/test-img.png" alt="test" />
+              <div class="ratingSize">
+                <div class="rating">
+                  <img src="./public/images/star.svg" alt="test" />4.8
+                </div>
+                <div class="size">85 x 90 см</div>
+              </div>
+              <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+              <div class="price">10 000₽</div>
+              <button class="button buttonCard">Заказать</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-6 d-flex justify-content-center">
+            <div class="CardProduct">
+              <div class="hitMarker">Хит</div>
+              <img
+                class="heartMarker"
+                src="./public/images//heartMarker.svg"
+                alt="heartMarker"
+              />
+              <img src="./public/images/test-img.png" alt="test" />
+              <div class="ratingSize">
+                <div class="rating">
+                  <img src="./public/images/star.svg" alt="test" />4.8
+                </div>
+                <div class="size">85 x 90 см</div>
+              </div>
+              <p class="description">Букет из красных роз “кения” 60 см 51 штука</p>
+              <div class="price">10 000₽</div>
+              <button class="button buttonCard">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div> 
     </div>
     <div class="wrapperFooter">
+      
       <footer class="footer">
-        <div class="footer2">      <div class="HeaderFooter">
-          <h4 class="headerDelivery">Доставка цветов в Нижнем Новгороде</h4>
-          <p>Проспект Ленина 62а</p>
-          <p>ул. Касьянова, д. 2б</p>
-          <p>Проспект Гагарина, д. 182</p>
-          <p>Проспект Гагарина, д. 19</p>
-          <p>ул. Белинского, д. 71/1</p>
-          <p>ул. Аэродромная, д. 28</p>
-          <p>ул. Коминтерна, д. 168</p>
-          <p>Проспект Гагарина, д. 60/1</p>
-        </div>
-        <button class="button buttonShowAll">Показать все</button>
-        <div class="HeaderFooter">
-          <ul class="HeaderFooter">
-            <h4 class="headerDelivery">Каталог товаров</h4>
-            <li><a href="#">Акции</a></li>
-            <li><a href="#">Розы</a></li>
-            <li><a href="#">Букеты</a></li>
-            <li><a href="#">Цветы</a></li>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">В коробках</a></li>
-            <li><a href="#">Корзины</a></li>
-            <li><a href="#">Повод</a></li>
-            <li><a href="#">Горшечые</a></li>
-          </ul>
-        </div>
-        <div class="HeaderFooter">
-          <ul class="HeaderFooter">
-            <h4 class="headerDelivery">Информация покупателю</h4>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Оплата</a></li>
-            <li><a href="#">Корпоративным клиентам</a></li>
-            <li><a href="#">Франшиза</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Гарантия свежести</a></li>
-            <li><a href="#">Бонусная программа</a></li>
-            <li><a href="#">Вакансии</a></li>
-            <li><a href="#">Политика конфиденциальности</a></li>
-          </ul>
-        </div>
-        <div class="HeaderFooter HeaderFooterСontacts">
-          <h4 class="headerDelivery">Контакты</h4>
-          <div class="wrapperPhoneOfice">        
-            <p>8 (831) 214-00-43 <div class="aroundClockOffice">Круглосуточно</div></p>
-            <p>8 (960) 168-53-53<div class="aroundClockOffice">Офис доставки</div></p></div>
-          <div class="addressRequisites">
-            Реквизиты онлайн-продавца: ИП Мочалина Гульфруc Мутыгуловна ИНН:
-            891103803770 ОГРИП: 318723200071651
+        <div class="footer2">      
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 justify-content-between ">
+                <div class="HeaderFooter">
+                  <h4 class="headerDelivery">Доставка цветов в Нижнем Новгороде</h4>
+                  <p>Проспект Ленина 62а</p>
+                  <p>ул. Касьянова, д. 2б</p>
+                  <p>Проспект Гагарина, д. 182</p>
+                  <p>Проспект Гагарина, д. 19</p>
+                  <p>ул. Белинского, д. 71/1</p>
+                  <p>ул. Аэродромная, д. 28</p>
+                  <p>ул. Коминтерна, д. 168</p>
+                  <p>Проспект Гагарина, д. 60/1</p>
+                  <button class="button buttonShowAll">Показать все</button>
+                </div>
+              </div>
+              
+              <div class="col-md-2"><div class="HeaderFooter">
+                <ul class="HeaderFooter">
+                  <h4 class="headerDelivery">Каталог товаров</h4>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Розы</a></li>
+                  <li><a href="#">Букеты</a></li>
+                  <li><a href="#">Цветы</a></li>
+                  <li><a href="#">По цене</a></li>
+                  <li><a href="#">В коробках</a></li>
+                  <li><a href="#">Корзины</a></li>
+                  <li><a href="#">Повод</a></li>
+                  <li><a href="#">Горшечые</a></li>
+                </ul>
+              </div></div>
+              <div class="col-md-3">
+                <div class="HeaderFooter">
+                  <ul class="HeaderFooter">
+                    <h4 class="headerDelivery">Информация покупателю</h4>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Франшиза</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Гарантия свежести</a></li>
+                    <li><a href="#">Бонусная программа</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="HeaderFooter HeaderFooterСontacts">
+                  <h4 class="headerDelivery">Контакты</h4>
+                  <div class="wrapperPhoneOfice">        
+                    <p>8 (831) 214-00-43 <div class="aroundClockOffice">Круглосуточно</div></p>
+                    <p>8 (960) 168-53-53<div class="aroundClockOffice">Офис доставки</div></p></div>
+                  <div class="addressRequisites">
+                    Реквизиты онлайн-продавца: ИП Мочалина Гульфруc Мутыгуловна ИНН:
+                    891103803770 ОГРИП: 318723200071651
+                  </div>
+                  <div class="addressRequisites">
+                    Центральный офис доставки: г. Нижний Новгород, ул. Аэродромная, 28
+                  </div>
+                  <div class="ratingYandex">
+                    <img  src="./public/images/imgYandex.svg" alt="test" /><div class="ratingYandexNumber">4.7</div><img
+                      src="./public/images/starFull.svg"
+                      alt="imgYandex"
+                    />
+                    <img src="./public/images/starFull.svg" alt="starFull" />
+                    <img src="./public/images/starFull.svg" alt="starFull" />
+                    <img src="./public/images/starFull.svg" alt="starFull" />
+                    <img src="./public/images/emptyHalf.png" alt="starFull" />
+                    Рейтинг организации в яндексе
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="addressRequisites">
-            Центральный офис доставки: г. Нижний Новгород, ул. Аэродромная, 28
-          </div>
-          <div class="ratingYandex">
-            <img  src="./public/images/imgYandex.svg" alt="test" /><div class="ratingYandexNumber">4.7</div><img
-              src="./public/images/starFull.svg"
-              alt="imgYandex"
-            />
-            <img src="./public/images/starFull.svg" alt="starFull" />
-            <img src="./public/images/starFull.svg" alt="starFull" />
-            <img src="./public/images/starFull.svg" alt="starFull" />
-            <img src="./public/images/emptyHalf.png" alt="starFull" />
-            Рейтинг организации в яндексе
-          </div>
+          <div class="hr"></div>
         </div>
-        <div class="hr"></div></div>
-        <div class="rightsReserved">
-          <div class="footerIconsBanks">
-            <div><img src="./public/images/master-card-logo.svg" alt="master-card-logo" /></div>
-            <div><img src="./public/images/visa-logo.svg" alt="visa-logo" /></div>
-            <div><img src="./public/images/yandexPay.svg" alt="yandexPay" /></div>
-            <div><img src="./public/images/sbp-1.svg" alt="sbp" /></div>
-            <div><img src="./public/images/sberPay.svg" alt="sberPay" /></div>
-            <div><img src="./public/images/mir.svg" alt="mir" /></div>
+          <div class="rightsReserved">
+            <div class="footerIconsBanks">
+              <div><img src="./public/images/master-card-logo.svg" alt="master-card-logo" /></div>
+              <div><img src="./public/images/visa-logo.svg" alt="visa-logo" /></div>
+              <div><img src="./public/images/yandexPay.svg" alt="yandexPay" /></div>
+              <div><img src="./public/images/sbp-1.svg" alt="sbp" /></div>
+              <div><img src="./public/images/sberPay.svg" alt="sberPay" /></div>
+              <div><img src="./public/images/mir.svg" alt="mir" /></div>
+            </div>
+            <div class="footerIconsSocialMedia">
+              <a href="https://web.whatsapp.com/"><div class="wrapperIconMedia"><img src="./public/images/whatsapp.svg" alt="whatsapp" /></div></a>
+              <a href="https://web.telegram.org"><div class="wrapperIconMedia"><img src="./public/images/telegramm.svg" alt="telegramm" /></div></a>
+              <a href="https://ru-ru.facebook.com/"><div class="wrapperIconMedia"><img src="./public/images/facebook.svg" alt="facebook" /></div></a>
+              <a href="https://m.dzen.ru/"><div class="wrapperIconMedia"><img src="./public/images/dzen.svg" alt="dzen" /></div></a>
+              <a href="https://www.youtube.com/"><div class="wrapperIconMedia"><img src="./public/images/youtube.svg" alt="youtube" /></div></a>
+            </div>
           </div>
-          <div class="footerIconsSocialMedia">
-            <a href="https://web.whatsapp.com/"><div class="wrapperIconMedia"><img src="./public/images/whatsapp.svg" alt="whatsapp" /></div></a>
-            <a href="https://web.telegram.org"><div class="wrapperIconMedia"><img src="./public/images/telegramm.svg" alt="telegramm" /></div></a>
-            <a href="https://ru-ru.facebook.com/"><div class="wrapperIconMedia"><img src="./public/images/facebook.svg" alt="facebook" /></div></a>
-            <a href="https://m.dzen.ru/"><div class="wrapperIconMedia"><img src="./public/images/dzen.svg" alt="dzen" /></div></a>
-            <a href="https://www.youtube.com/"><div class="wrapperIconMedia"><img src="./public/images/youtube.svg" alt="youtube" /></div></a>
+          <div class="info">
+            <div>База Цветов 24.ру  все права защищены 2023г.</div>
+            <div>Информация на сайте представлена для ознакомления - не оферта.</div>
           </div>
-        </div>
-        <div class="info">
-          <div>База Цветов 24.ру  все права защищены 2023г.</div>
-          <div>Информация на сайте представлена для ознакомления - не оферта.</div>
-        </div>
       </footer>
       <footer class="footerMobile">
-        <div class="navFooterMobile">
-          <a href="https://pasha-zhukov.github.io/flower-base/#" ><div class="CubeCatalogGrey"></div></a>
-          <a href="#"><div class="heartCatalogGrey"></div></a>
-          <a href="#"><div class="basketCatalogGrey"></div></a>
-          <a  onclick="focusInput()" href="#"><div class="searchCatalogGrey"></div></a>
-          <a href="#"><div class="userCatalogGrey"></div></a>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 d-flex  fixed-bottom justify-content-between  navFooterMobile">
+                <a href="https://pasha-zhukov.github.io/flower-base/#" ><div class="CubeCatalogGrey"></div></a>
+                <a href="#"><div class="heartCatalogGrey"></div></a>
+                <a href="#"><div class="basketCatalogGrey"></div></a>
+                <a  onclick="focusInput()" href="#"><div class="searchCatalogGrey"></div></a>
+                <a href="#"><div class="userCatalogGrey"></div></a>
+            </div>
+          </div>
         </div>
+        
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
