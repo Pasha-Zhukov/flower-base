@@ -766,7 +766,7 @@ button {
     cursor: pointer;
   }
   .search {
-    width: 267px;
+    width: 240px;
   }
 
   .headerBottom {
@@ -789,6 +789,52 @@ button {
     display: none; /* for Chrome, Safari, and Opera */
   }
 
+  .roses,
+  .tulips,
+  .lilies,
+  .peonies,
+  .irises,
+  .hydrangea,
+  .alstroemeria,
+  .lisianthus,
+  .gerberas,
+  .chrysanthemum,
+  .carnation,
+  .orchids,
+  .gypsophila,
+  .potted {
+    display: block;
+    width: 190px;
+    height: 105px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .roses img,
+  .tulips img,
+  .lilies img,
+  .peonies img,
+  .irises img,
+  .hydrangea img,
+  .alstroemeria img,
+  .lisianthus img,
+  .gerberas img,
+  .chrysanthemum img,
+  .carnation img,
+  .orchids img,
+  .gypsophila img,
+  .potted img,
+  .decorative img,
+  .blooming img {
+    position: absolute;
+    width: 40%;
+    bottom: 0px;
+    right: 0px;
+  }
+
   .headerCatalog {
     font-size: 24px;
   }
@@ -800,14 +846,14 @@ button {
   }
   .stockHeader,
   .historyHeader {
-    text-align: center;
+    text-align: center !important;
   }
 
   .CardProduct {
-    width: 210px;
+    width: 250px;
   }
   .ratingSize {
-    gap: 35px;
+    gap: 75px;
   }
   .price {
     margin: 15px 0 0 15px;
